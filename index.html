@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Del Plata Rock</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="icon" href="images/i.png">
+</head>
+
+<body>
+    <header>
+        <h1>DEL PLATA ROCK</h1>
+        <P>PRIMERA EDICIÓN</P>
+        <h2 id="primerHDos">TRES NOCHES A PURO ROCK</h2>
+        <h2>A beneficio de x.org </h2>
+        <a class="link" href="#seccBandas">BANDAS INVITADAS</a>
+        <a class="link" href="#enlaceEntradas">ENTRADAS</a>
+    </header>
+    <section id="seccBandas">
+        <div class="bandas">
+            <div class="imgBandas" id="ecdn"></div>
+            <h2>EL CUARTETO DE NOS</h2>
+        </div>
+        <div class="bandas">
+            <h2>NO TE VA GUSTAR</h2>
+            <div class="imgBandas" id="ntvg"></div>
+        </div>
+        <div class="bandas">
+            <div class="imgBandas" id="buitres"></div>
+            <h2>BUITRES</h2>
+        </div>
+    </section>
+
+    <section class="entradas">
+        <h2 id="enlaceEntradas">COMPRÁ TU ENTRADA ANTICIPADA</h2>
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <form>
+                <div class="inlineblock">
+                    <label class="DatPer" for="dat1">Nombre Completo:</label>
+                    <input id="dat1" type="text" name="nombre" placeholder="Ingresá tu nombre." required>
+                    <label class="DatPer" for="dat2">Correo Electrónico:</label>
+                    <input id="dat2" type="email" name="correo" placeholder="Ingresá tu correo." required>
+                    <label class="DatPer" for="dat3">CI:</label>
+                    <input id="dat3" type="text" name="CI" placeholder="Ingresá tu CI" required>
+                </div>
+                <br>
+                <fieldset>
+                    <legend>Encuesta</legend>
+                    <p>Con el fin de dar la mejor experiencia posible y teniendo en cuenta que el valor de la bebida
+                        será de $150 independientemente de cual sea, te pedimos que respondas a las siguientes
+                        preguntas:</p>
+                    <p>¿Piensas que tomarás alcohol en el evento?.</p>
+                    <label><input class="radio" type="radio" name="PiensaComprarAlcohol">Sí</label>
+                    <label><input class="radio" type="radio" name="PiensaComprarAlcohol" checked>No</label>
+                    <label><input class="radio" type="radio" name="PiensaComprarAlcohol">Quizás</label>
+                    <p>¿Cuál bebida prefieres? Podes seleccionar varias.</p>
+                    <label><input class="checkbox" type="checkbox" name="prefieres?">Cerveza</label>
+                    <label><input class="checkbox" type="checkbox" name="prefieres?">Fernet con coca</label>
+                    <label><input class="checkbox" type="checkbox" name="prefieres?">WhisCola</label>
+                    <label><input class="checkbox" type="checkbox" name="prefieres?">Otros</label>
+                </fieldset>
+                <button id="boton">Enviar formulario e ir a la página de pago </button>
+            </form>
+        </fieldset>
+</body>
+
+</html>
